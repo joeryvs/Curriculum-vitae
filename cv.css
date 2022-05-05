@@ -2,8 +2,11 @@ body {
   background-color: antiquewhite;
 }
 
-h1,
-h2 {
+h1 {
+  font-size: xx-large;
+}
+
+h1, h2 {
   /* text-align: center; */
   color: rgb(247, 54, 20);
 }
@@ -62,4 +65,21 @@ div#left{
 div#right{
     grid-area: RightSide;
     /* background-color: rgba(127, 255, 212, 0.397); */
+}
+
+
+div#adressss{
+  display: grid;
+  grid-template-areas: 
+  "start  more  filling";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+p#inf1{
+  /* background-color: rgba(25, 201, 201, 0.63); */
+  grid-area: start;
+}
+p#inf2{
+  /* background-color: rgba(34, 201, 25, 0.63); */
+  grid-area: more;
 }
