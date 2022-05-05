@@ -1,25 +1,65 @@
 body {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
-h1 ,h2 {
-    /* text-align: center; */
-    color: rgb(247, 54, 20);
+h1,
+h2 {
+  /* text-align: center; */
+  color: rgb(247, 54, 20);
 }
 
-
-h3 , h4 {
-    color: steelblue;
-    /* text-align: center; */
+h3,
+h4 {
+  color: steelblue;
+  /* text-align: center; */
 }
 
 ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    margin-right: 0%;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  margin-right: 0%;
+}
+
+div#eigenshappen {
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-areas: "line1  line2";
+  grid-gap: 30px;
+}
+
+ol#ol1 {
+  /* background-color: rgba(255, 255, 0, 0.546); */
+  grid-area: line1;
+}
+ol#ol2 {
+  /* background-color: rgba(0, 255, 123, 0.411); */
+  grid-area: line2;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "leftSide   Content     RightSide";
+    grid-template-columns: 1fr 8fr 1fr;
+    /* grid-template-rows: 1fr 4fr 1fr; */
+}
+
+article#art{
+    
+    grid-area: Content;
+    /* background-color: rgba(165, 42, 42, 0.2); */
+}
+
+div#left{
+    grid-area: leftSide;
+    /* background-color: rgba(127, 255, 212, 0.397); */
+}
+div#right{
+    grid-area: RightSide;
+    /* background-color: rgba(127, 255, 212, 0.397); */
 }
