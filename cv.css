@@ -74,3 +74,8 @@ p#inf2{
   /* background-color: rgba(34, 201, 25, 0.63); */
   grid-area: more;
 }
+
+::selection{
+  background-color: rgba(0, 0, 255, 0.7);
+  color: orange;
+}
